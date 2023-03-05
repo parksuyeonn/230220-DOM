@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <h1>그린컴퓨터아트학원 3층 자판기</h1>
+    <div>
+      <h2>밀키스가격</h2>
+      <p>900</p>
+    </div>
+    <div>
+      <h2>코카콜라가격</h2>
+      <p>2800</p>
+    </div>
+    <div>
+      <h2>원장님조르기</h2>
+      <p>0</p>
+    </div>
+  </div>
+  <script>
+
+    var a = document.querySelectorAll('div>p')
+    console.log(a);
+    var b = a[0].innerHTML;
+    var c = a[1].innerHTML;
+    console.log(b-c);
+
+    // //문서에서 가지고 온 값 - 옆에 있는 값
+    // var result = 2800 - 900;
+    // console.log(result);
+    // //노션에 캡처해놓음
+
+    // var a = 1;
+    // var b = "string";
+    // var c = {
+    //   key : "value",
+    //   name : "욱재"
+    // }
+    // console.log(c.name);
+    // var d = [1, "유진",2 , 3, 4]
+    // console.log(d[1]);
+    
+    var root = document.getElementById('root'); // css에서 #root과 똑같다
+    console.dir(root);
+    // $('#root')
+  </script>
+</body>
+</html>

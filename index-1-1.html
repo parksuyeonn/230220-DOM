@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div id="div-01">Here is div-01</div>
+    <div id="div-02">Here is div-02</div>
+    
+    <script>
+    //Mdn nextElementSibling예시
+    //부모의 자식목록에서 지정된 요소 바로 뒤에 오는 요소를 반환하거나
+    //null로 지정된 요소가 목록의 마지막 요소인 경우 반환
+      let el = document.getElementById("div-01").nextElementSibling;
+      console.log("Siblings of div-01:");
+      while (el) {
+        console.log(el.nodeName);
+        //기준태그.nodeName -> 자신의 대문자명 태그 , 결과값 : DIV
+        el = el.nextElementSibling; //결과값 : SCRIPT
+      }
+    </script>
+</body>
+</html>
+
+
+
